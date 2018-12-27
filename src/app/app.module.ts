@@ -4,9 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { HeroParentComponent} from './hero-parent.component';
+import { HeroChildComponent } from './hero-child.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeroParentComponent,
+    HeroChildComponent
   ],
   imports: [
     BrowserModule,
