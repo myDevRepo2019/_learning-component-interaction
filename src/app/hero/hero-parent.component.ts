@@ -1,6 +1,6 @@
 import { Component} from '@angular/core';
 
-import { HEROES } from './hero';
+import { HEROES } from '../hero';
 
 @Component(
     {
@@ -11,5 +11,5 @@ import { HEROES } from './hero';
 
 export class HeroParentComponent {
     heroes = HEROES;
-    master = 'Master';
+    master = 'Master'; 
 }

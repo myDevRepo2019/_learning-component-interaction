@@ -4,11 +4,15 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { HeroParentComponent} from './hero-parent.component';
-import { HeroChildComponent } from './hero-child.component';
+import { HeroParentComponent} from './hero/hero-parent.component';
+import { HeroChildComponent } from './hero/hero-child.component';
 
-import { NameParentComponent} from './name-parent.component';
-import { NameChildComponent } from './name-child.component';
+import { NameParentComponent} from './name/name-parent.component';
+import { NameChildComponent } from './name/name-child.component';
+
+import { VersionParentComponent} from './version/version-parent.component';
+import { VersionChildComponent } from './version/version-child.component';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +20,9 @@ import { NameChildComponent } from './name-child.component';
     HeroParentComponent,
     HeroChildComponent,
     NameParentComponent,
-    NameChildComponent
+    NameChildComponent,
+    VersionParentComponent,
+    VersionChildComponent
   ],
   imports: [
     BrowserModule,
