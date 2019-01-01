@@ -26,7 +26,7 @@ export class HeroParentComponent {
 
         // further simplified fat arrow usage, if code is in one line
         const add2 = (a, b) =>  a + b;
-        console.log(add1(3, 5));
+        console.log(add2(3, 5));
 
     }
 
