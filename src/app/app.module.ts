@@ -37,8 +37,6 @@ import { CountdownViewChildTimerComponent } from './countdown-viewchild/countdow
     CountdownLocalVarParentComponent,
     CountdownViewChildParentComponent,
     CountdownViewChildTimerComponent
-    
-
   ],
   imports: [
     BrowserModule,
