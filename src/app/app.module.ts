@@ -23,6 +23,8 @@ import { CountdownViewChildParentComponent} from './countdown-viewchild/countdow
 import { CountdownViewChildTimerComponent } from './countdown-viewchild/countdown-timer-vc.component';
 import { RecipientComponent } from './observable-data-exchange/recipient.component';
 import { SenderComponent } from './observable-data-exchange/sender.compontent';
+import { MissionControlComponent } from './space-mission/missioncontrol.component';
+import { AstronautComponent } from './space-mission/astronaut.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { SenderComponent } from './observable-data-exchange/sender.compontent';
     CountdownViewChildParentComponent,
     CountdownViewChildTimerComponent,
     RecipientComponent,
-    SenderComponent
+    SenderComponent,
+    MissionControlComponent,
+    AstronautComponent
   ],
   imports: [
     BrowserModule,
