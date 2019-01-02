@@ -21,6 +21,8 @@ import { CountdownTimerComponent } from './countdown/countdown-timer.component';
 
 import { CountdownViewChildParentComponent} from './countdown-viewchild/countdown-parent-vc.component';
 import { CountdownViewChildTimerComponent } from './countdown-viewchild/countdown-timer-vc.component';
+import { RecipientComponent } from './observable-data-exchange/recipient.component';
+import { SenderComponent } from './observable-data-exchange/sender.compontent';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { CountdownViewChildTimerComponent } from './countdown-viewchild/countdow
     CountdownTimerComponent,
     CountdownLocalVarParentComponent,
     CountdownViewChildParentComponent,
-    CountdownViewChildTimerComponent
+    CountdownViewChildTimerComponent,
+    RecipientComponent,
+    SenderComponent
   ],
   imports: [
     BrowserModule,

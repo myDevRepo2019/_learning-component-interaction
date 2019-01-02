@@ -33,44 +33,44 @@ export class HeroParentComponent {
         // object that contains a proper function doing that
         let obj = {
             name: "Anyname",
-            saylater: function() {                
+            saylater: function() {
                 console.log(this.name);
             }
-        }
+        };
         obj.saylater();
 
-        //doing the same with a delay
+        // doing the same with a delay
         let obj1 = {
             name: "Anyname1",
-            saylater: function() {   
+            saylater: function() {
                 // this line here is necessary to reference to the correct level
                 // otherwise it display nothing or undefined
-                let anyBlabla = this; 
+                let anyBlabla = this;
                 setTimeout(function() {
                     console.log(anyBlabla.name);
                 }
-                ,2000)                             
+                , 2000);
             }
-        }
+        };
         obj1.saylater();
 
-        //doing the same with fat arrow syntax
+        // doing the same with fat arrow syntax
         let obj2 = {
             name: "Anyname2",
-            saylater: function() {                
+            saylater: function() {
                 setTimeout(() => {
-                    //here we can use "this" again without limitations
+                    // here we can use "this" again without limitations
                     console.log(this.name);
                 }
-                ,3000)                             
+                , 3000);
             }
-        }
+        };
         obj2.saylater();
 
-        //creating and subscribing to a basis Subject-Observable
+        // creating and subscribing to a basis Subject-Observable
         const subject = new Subject();
         subject.next('missing message from Subject');
-        subject.subscribe(v=>console.log(v));
+        subject.subscribe(v => console.log(v));
         subject.next('hello from subject');
         subject.next('another text');
 

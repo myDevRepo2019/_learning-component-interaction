@@ -1,0 +1,17 @@
+<div style="border: 1px dashed brown; padding: 10px">
+    <span style="color: brown">This is the sender component</span><br>
+    <button (click)="sendMessage()">Send the message</button>
+    <button (click)="clearMessage()">Clear the message</button>
+    <br>
+    Enter any text
+    <input 
+        (keyup)="sendEnteredText($event)" 
+        id="enteredText"
+        name="enteredText"
+    ><br>
+    {{displayedText}}
+
+    <br><br>
+    <app-recipient></app-recipient>
+    <br>
+</div>
