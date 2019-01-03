@@ -39,6 +39,8 @@ export class AstronautComponent implements OnDestroy{
     updateButtonStatus() {
         if (this.isMissionAnnounced && this.isMissionConfirmed) {
             this.buttonDisabled = true;
+        } else {
+            this.buttonDisabled = false;
         }
     }
 
